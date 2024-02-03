@@ -20,12 +20,11 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -64,7 +63,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -77,7 +75,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -90,7 +87,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -103,7 +99,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -116,7 +111,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -129,7 +123,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -304,7 +297,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_19
+      name: Shield_PowerUp
       rect:
         serializedVersion: 2
         x: 36
@@ -325,7 +318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_20
+      name: Ship_Down
       rect:
         serializedVersion: 2
         x: 75
@@ -388,7 +381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_23
+      name: Fire
       rect:
         serializedVersion: 2
         x: 306
@@ -409,11 +402,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_24
+      name: Standing
       rect:
         serializedVersion: 2
         x: 358
-        y: 117
+        y: 118
         width: 20
         height: 27
       alignment: 0
@@ -430,7 +423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_25
+      name: Shield
       rect:
         serializedVersion: 2
         x: 385
@@ -451,7 +444,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_26
+      name: M_PowerUp
       rect:
         serializedVersion: 2
         x: 6
@@ -472,7 +465,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_28
+      name: Ship_Up
       rect:
         serializedVersion: 2
         x: 76
@@ -493,7 +486,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_29
+      name: Ship_neutral
       rect:
         serializedVersion: 2
         x: 119
@@ -556,7 +549,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_32
+      name: Dying
       rect:
         serializedVersion: 2
         x: 350
@@ -577,7 +570,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_33
+      name: L_PowerUp
       rect:
         serializedVersion: 2
         x: 6
@@ -598,7 +591,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_34
+      name: F_PowerUp
       rect:
         serializedVersion: 2
         x: 37
@@ -619,7 +612,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_35
+      name: Bomb_PowerUp
       rect:
         serializedVersion: 2
         x: 68
@@ -640,7 +633,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_36
+      name: Transformation_1
       rect:
         serializedVersion: 2
         x: 117
@@ -661,7 +654,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_37
+      name: Transforation_2
       rect:
         serializedVersion: 2
         x: 168
@@ -682,7 +675,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_38
+      name: Walking_1
       rect:
         serializedVersion: 2
         x: 196
@@ -691,7 +684,7 @@ TextureImporter:
         height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 2, z: 7, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -703,16 +696,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_39
+      name: Walking_2
       rect:
         serializedVersion: 2
         x: 220
         y: 26
         width: 23
-        height: 22
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 9, y: 2, z: 7, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -766,7 +759,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_42
+      name: Lazer_1
       rect:
         serializedVersion: 2
         x: 298
@@ -787,7 +780,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_43
+      name: Jumping
       rect:
         serializedVersion: 2
         x: 338
@@ -808,7 +801,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_44
+      name: Lazer_2
       rect:
         serializedVersion: 2
         x: 301
@@ -829,7 +822,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_45
+      name: Big_bullet
       rect:
         serializedVersion: 2
         x: 377
@@ -850,7 +843,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_46
+      name: Bullet_1
       rect:
         serializedVersion: 2
         x: 308
@@ -871,7 +864,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_sprites_T_47
+      name: Bullet_2
       rect:
         serializedVersion: 2
         x: 316
@@ -900,7 +893,7 @@ TextureImporter:
         width: 9
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -923,56 +916,57 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Game_sprites_T_0: 1768976726
-      Game_sprites_T_1: 19541038
-      Game_sprites_T_10: 1617665763
-      Game_sprites_T_11: 2046129401
+      Ship_neutral: -1361772648
+      Ship_Down: 1956389136
       Game_sprites_T_12: 537924804
-      Game_sprites_T_13: 1322431705
-      Game_sprites_T_14: -201045865
-      Game_sprites_T_15: 285353729
-      Game_sprites_T_16: 961087766
+      Dying: 1594946567
       Game_sprites_T_17: -917648581
-      Game_sprites_T_18: 2120673651
-      Game_sprites_T_19: -787038301
-      Game_sprites_T_2: -1181912577
-      Game_sprites_T_20: 1956389136
-      Game_sprites_T_21: 632371860
-      Game_sprites_T_22: -704387904
-      Game_sprites_T_23: 230948966
-      Game_sprites_T_24: 1401475584
-      Game_sprites_T_25: -164781076
-      Game_sprites_T_26: 701961643
-      Game_sprites_T_27: -1905417318
-      Game_sprites_T_28: 2140584996
-      Game_sprites_T_29: -1361772648
-      Game_sprites_T_3: 56707122
       Game_sprites_T_30: 24790424
-      Game_sprites_T_31: -795601524
-      Game_sprites_T_32: 1594946567
-      Game_sprites_T_33: -1825839273
-      Game_sprites_T_34: -1408119650
-      Game_sprites_T_35: 1956018158
-      Game_sprites_T_36: -635168484
-      Game_sprites_T_37: 638771717
-      Game_sprites_T_38: 1473635540
-      Game_sprites_T_39: -543641069
-      Game_sprites_T_4: -1225921817
-      Game_sprites_T_40: -689142361
-      Game_sprites_T_41: 713180506
-      Game_sprites_T_42: -943727989
-      Game_sprites_T_43: -478376120
-      Game_sprites_T_44: -2143623768
-      Game_sprites_T_45: 472408310
-      Game_sprites_T_46: 664931696
-      Game_sprites_T_47: 35653218
-      Game_sprites_T_5: -1062542392
+      Big_bullet: 472408310
       Game_sprites_T_6: -902163382
       Game_sprites_T_7: 34588628
-      Game_sprites_T_8: -1597456737
+      Game_sprites_T_13: 1322431705
+      Lazer_2: -2143623768
+      Bullet_1: 664931696
+      Walking_2: -543641069
+      Game_sprites_T_4: -1225921817
+      Lazer_1: -943727989
+      Game_sprites_T_3: 56707122
+      Game_sprites_T_15: 285353729
+      Game_sprites_T_2: -1181912577
+      Game_sprites_T_21: 632371860
+      Game_sprites_T_27: -1905417318
+      Game_sprites_T_11: 2046129401
+      F_PowerUp: -1408119650
+      Bullet_2: 35653218
+      Ship_Up: 2140584996
+      Game_sprites_T_18: 2120673651
+      Jumping: -478376120
+      Transforation_2: 638771717
+      M_PowerUp: 701961643
+      Game_sprites_T_0: 1768976726
+      Shield_PowerUp: -787038301
+      Game_sprites_T_16: 961087766
+      Game_sprites_T_5: -1062542392
+      Game_sprites_T_31: -795601524
+      Fire: 230948966
+      Game_sprites_T_40: -689142361
+      Game_sprites_T_22: -704387904
+      Game_sprites_T_10: 1617665763
+      Walking_1: 1473635540
       Game_sprites_T_9: 1336554042
-  mipmapLimitGroupName: 
+      Bomb_PowerUp: 1956018158
+      Game_sprites_T_1: 19541038
+      Shield: -164781076
+      Transformation_1: -635168484
+      Game_sprites_T_41: 713180506
+      Standing: 1401475584
+      L_PowerUp: -1825839273
+      Game_sprites_T_14: -201045865
+      Game_sprites_T_8: -1597456737
+  spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

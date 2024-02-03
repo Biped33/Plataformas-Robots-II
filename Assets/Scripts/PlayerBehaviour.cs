@@ -24,9 +24,10 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpCount > 0)
         {
+            animator.SetBool("Jumping", true);
+
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpCount--;
-            animator.SetBool("IsJumping", true);
         }
     }
 
@@ -35,16 +36,16 @@ public class PlayerBehaviour : MonoBehaviour
         if (horizontal < 0)
         {
             sprite.flipX = true;
-            animator.SetBool("IsWalking", true);
+            animator.SetBool("Walking", true);
         }
         if (horizontal > 0)
         {
             sprite.flipX = false;
-            animator.SetBool("IsWalking", true);
+            animator.SetBool("Walking", true);
         }
         else if (horizontal == 0)
         {
-            animator.SetBool("IsWalking", false);
+            animator.SetBool("Walking", false);
         }
     }
 
@@ -53,7 +54,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (collision.collider.CompareTag("IsGrounded"))
         {
             jumpCount = 2;
-            animator.SetBool("IsJumping", false);
+            animator.SetBool("Jumping", false);
         }
     }
 
