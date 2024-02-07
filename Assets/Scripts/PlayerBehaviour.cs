@@ -9,14 +9,19 @@ public class PlayerBehaviour : MonoBehaviour
     private Animator animator;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        sprite = GetComponent<SpriteRenderer>();
-        animator = GetComponent<Animator>();
+        GetComponents();
     }
     void Update()
     {
         PlayerMovement();
         PlayerDirection();
+    }
+
+    void GetComponents()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
     void PlayerMovement()
     {
@@ -57,6 +62,7 @@ public class PlayerBehaviour : MonoBehaviour
             animator.SetBool("Jumping", false);
         }
     }
+
 
     private void FixedUpdate()
     {
