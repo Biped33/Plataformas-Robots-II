@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    private int movSpeed = 500, jumpForce = 7, jumpCount = 2;
+    private int movSpeed = 500, jumpForce = 7, jumpCount = 2, layerint = 3;
     private float horizontal;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator animator;
+  
     void Start()
     {
         GetComponents();
@@ -56,7 +57,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("IsGrounded"))
+        if (collision.gameObject.layer == layerint)
         {
             jumpCount = 2;
             animator.SetBool("Jumping", false);
