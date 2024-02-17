@@ -1,72 +1,59 @@
 using UnityEngine;
-
-public class PlayerBehaviour : MonoBehaviour
-{
-    private int movSpeed = 500, jumpForce = 7, jumpCount = 2, layerint = 3;
-    private float horizontal;
+public class PlayerBehaviour : MonoBehaviour{
+    private int t_movSpeed = 500, t_jumpCount = 2, t_layerint = 3; 
+    private float t_inputHorizontal, t_jumpForce = 35f, t_maxJumpForce = 37f;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator animator;
-  
-    void Start()
-    {
-        GetComponents();
+    void Start(){
+        getComponents();
     }
-    void Update()
-    {
-        PlayerMovement();
-        PlayerDirection();
+    void Update(){
+        playerJump();
+        playerDirection();
     }
-
-    void GetComponents()
-    {
+    private void FixedUpdate(){
+        playerMovement();
+    }
+    private void OnCollisionEnter2D(Collision2D collision){
+        playerCollisions(collision);
+    }
+    void getComponents(){
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
-    void PlayerMovement()
-    {
-        horizontal = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetKeyDown(KeyCode.Space) && jumpCount > 0)
-        {
+    void playerMovement(){
+        t_inputHorizontal = Input.GetAxisRaw("Horizontal");
+        rb.velocity = new Vector2(t_inputHorizontal * t_movSpeed * Time.deltaTime, rb.velocity.y);
+    }
+    void playerJump(){
+        if (Input.GetKeyDown(KeyCode.Space) && t_jumpCount > 0){
+            rb.AddForce(Vector2.up * t_jumpForce, ForceMode2D.Impulse);
+            t_jumpCount--;
             animator.SetBool("Jumping", true);
-
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            jumpCount--;
+        }
+        if (rb.velocity.magnitude > t_maxJumpForce){
+            rb.velocity = rb.velocity.normalized * t_maxJumpForce;
         }
     }
-
-    void PlayerDirection()
-    {
-        if (horizontal < 0)
-        {
+    void playerDirection(){
+        if (t_inputHorizontal < 0){
             sprite.flipX = true;
             animator.SetBool("Walking", true);
         }
-        if (horizontal > 0)
-        {
+        if (t_inputHorizontal > 0){
             sprite.flipX = false;
             animator.SetBool("Walking", true);
         }
-        else if (horizontal == 0)
-        {
+        else if (t_inputHorizontal == 0){
             animator.SetBool("Walking", false);
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == layerint)
-        {
-            jumpCount = 2;
+    void playerCollisions(Collision2D collision){
+        if (collision.gameObject.layer == t_layerint){
+            t_jumpCount = 2;
             animator.SetBool("Jumping", false);
         }
-    }
-
-
-    private void FixedUpdate()
-    {
-        rb.velocity = new Vector2(horizontal * movSpeed * Time.deltaTime, rb.velocity.y);
     }
 }
