@@ -1,0 +1,953 @@
+fileFormatVersion: 2
+guid: f77273b3ab99e884f859c42bebd90b8b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 19.5
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bACKGROUD_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 839
+        width: 241
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55097ffefe02ae42a967dcb0357dde3
+      internalID: -1057939789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 839
+        width: 242
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d491ea950fcd80a4083ea0363ca28aeb
+      internalID: -1283314366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_2
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 839
+        width: 241
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fef712b67c427438245962f34bc434
+      internalID: -452974958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_21
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 780
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798cba1fb83bacf4cbd884ad7fd14ab8
+      internalID: -1803492325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 780
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89a6467cacc2c54ba4f2a42c8562245
+      internalID: -136022231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_23
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 780
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e00f65f07eab3469aa49247424d8ad
+      internalID: -1314574355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_24
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 780
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9277a5e08ec858a469b4aa8aac096587
+      internalID: -1488044471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_25
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 780
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327a5a9c7c2f42e49a3f7f88423390a8
+      internalID: -1717979471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_26
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 780
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ab190a20364044d87e83ae0c7201d4
+      internalID: -185647425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_27
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 780
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbae00910907b146b721ac9e0c02cd1
+      internalID: -220479054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_28
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 780
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5308deb390eece7478b698e2d822a08a
+      internalID: -1822577954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_30
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 760
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b522d1648e7df7c4088ed077939f847e
+      internalID: 1957014454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_31
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 740
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a921a862b26d0d542b62b8a160f559f7
+      internalID: 417869613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 740
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b579de7683975bc43b2b9759035a4d56
+      internalID: -263712744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_33
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 740
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f762f4549004d34593674ba8156879a
+      internalID: -1166573421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_34
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 740
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4faf6cf605bd50e4d9ea461742ea6136
+      internalID: 1614276417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_35
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 740
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ad244f3b3bde341b354de754695527
+      internalID: 781627549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_36
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 740
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9c7902d998a324687e421278f640f1
+      internalID: 253905511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_37
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 601
+        width: 120
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c711a90b00bc564d89d07dbb974a0bd
+      internalID: 275053785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_38
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 603
+        width: 75
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e10d8f37c3222408e0a6f5f4536365
+      internalID: 1571396861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_39
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 660
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bd87bd21d1c524380182df3c874e73
+      internalID: 1955548963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_40
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 660
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8362d0c038d184f448fabf4664b0f1df
+      internalID: 1760002585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_41
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 660
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ad8eb132861454b8b465cbc66317ec
+      internalID: -315403263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_42
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 660
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86a79eaa789294489d63c362f772a0b
+      internalID: -1576145365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_43
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 660
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7a3ed74a2c68d4aba179c812a400e1
+      internalID: -2042925072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 620
+        width: 52
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf5ebef7f1cd5d47aaafcb3c0b34f56
+      internalID: -1583720652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_45
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 620
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0188fc00d9afa044a8b3759f679e9fd0
+      internalID: 1906418545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_46
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 359
+        width: 241
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbf9edb006fa764187aeb238af356cc
+      internalID: 1512553433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_47
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 119
+        width: 241
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d155186f98570498ccc76477912e72
+      internalID: -2005254463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_48
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 119
+        width: 241
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1717ae99b08497c4b82a2d116e3bd539
+      internalID: 324116695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_49
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 119
+        width: 242
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989a314a6df096144a00acf38e3550be
+      internalID: -1899337617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_50
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 119
+        width: 242
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556adaaa72aa03c40895b59df78ff3e8
+      internalID: 1689121433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_51
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 119
+        width: 242
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188651cc7f651a544a18aa484f8337c7
+      internalID: -1411757334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_52
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 119
+        width: 242
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a67980ed3a0504db1404863bbcc6fc
+      internalID: 314220788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_3
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1014
+        width: 86
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4c9edc829d7b64c85a7b3d4c10bee4
+      internalID: -8590418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_4
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 976
+        width: 87
+        height: 26
+      alignment: 9
+      pivot: {x: 0.49999925, y: 0.51236445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee8566e6b0c91249b72192568399eda
+      internalID: 1613993785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bACKGROUD_5
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 938
+        width: 87
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf62414e52148d64aa942c21d494651a
+      internalID: -1700033730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bACKGROUD_8: 1649342422
+      bACKGROUD_50: 1689121433
+      bACKGROUD_14: -974023612
+      bACKGROUD_15: 967873346
+      bACKGROUD_52: 314220788
+      bACKGROUD_9: -139215110
+      bACKGROUD_47: -2005254463
+      bACKGROUD_30: 1957014454
+      bACKGROUD_27: -220479054
+      bACKGROUD_17: -1674189187
+      bACKGROUD_26: -185647425
+      bACKGROUD_36: 253905511
+      bACKGROUD_44: -1583720652
+      bACKGROUD_46: 1512553433
+      bACKGROUD_16: 2098347699
+      bACKGROUD_24: -1488044471
+      bACKGROUD_49: -1899337617
+      bACKGROUD_19: 2077961188
+      bACKGROUD_12: 699035213
+      bACKGROUD_2: -452974958
+      bACKGROUD_40: 1760002585
+      bACKGROUD_7: 825056341
+      bACKGROUD_48: 324116695
+      bACKGROUD_6: 1402604766
+      bACKGROUD_39: 1955548963
+      bACKGROUD_4: 1613993785
+      bACKGROUD_43: -2042925072
+      bACKGROUD_23: -1314574355
+      bACKGROUD_28: -1822577954
+      bACKGROUD_11: 1835134276
+      bACKGROUD_45: 1906418545
+      bACKGROUD_35: 781627549
+      bACKGROUD_38: 1571396861
+      bACKGROUD_25: -1717979471
+      bACKGROUD_29: -1417488671
+      bACKGROUD_20: -1156500452
+      bACKGROUD_42: -1576145365
+      bACKGROUD_41: -315403263
+      bACKGROUD_10: 1649911509
+      bACKGROUD_5: -1700033730
+      bACKGROUD_31: 417869613
+      bACKGROUD_37: 275053785
+      bACKGROUD_34: 1614276417
+      bACKGROUD_21: -1803492325
+      bACKGROUD_22: -136022231
+      bACKGROUD_0: -1057939789
+      bACKGROUD_18: 628713702
+      bACKGROUD_13: 125828395
+      bACKGROUD_3: -8590418
+      bACKGROUD_1: -1283314366
+      bACKGROUD_51: -1411757334
+      bACKGROUD_32: -263712744
+      bACKGROUD_33: -1166573421
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
