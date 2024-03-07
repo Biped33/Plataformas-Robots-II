@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class PlayersManager : MonoBehaviour {
     [SerializeField]
     private int playersHealthPoints, deadZones = 6;
@@ -12,7 +11,6 @@ public class PlayersManager : MonoBehaviour {
     void Start() {
         sprite = GetComponent<SpriteRenderer>();
     }
-
     private void OnCollisionStay2D(Collision2D collision) {
         if(collision.gameObject.layer == deadZones) {
             if(healthTimer >= 0){
@@ -23,13 +21,13 @@ public class PlayersManager : MonoBehaviour {
                 if(playersHealthPoints <= 0) {
                     isAlive = false;
                 }
-                healthTimer = 0.1f;
+                healthTimer = 0.01f;
             }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision) {
-        if(collision.gameObject.tag == "Finish line"){
-            Debug.Log("Ganaste");
+    if (collision.gameObject.tag == "Finish line"){
+            Debug.Log("You´re Win");
         }
     }
     public void restartPlayer() {
