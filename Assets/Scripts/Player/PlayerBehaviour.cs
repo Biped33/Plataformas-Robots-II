@@ -1,7 +1,7 @@
 using UnityEngine;
 public class PlayerBehaviour : MonoBehaviour{
-    private int t_movSpeed = 500, t_jumpCount = 2, t_layerint = 3; 
-    private float t_inputHorizontal, t_jumpForce = 35f, t_maxJumpForce = 37f;
+    private int t_movSpeed = 400, t_jumpCount = 2, t_layerint = 3; 
+    private float t_inputHorizontal, t_jumpForce = 30f, t_maxJumpForce = 35f;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator animator;
