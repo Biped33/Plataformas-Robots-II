@@ -8,6 +8,7 @@ public class PlayersManager : MonoBehaviour {
     private Transform respawnPoint;
     private SpriteRenderer sprite;
     public bool isAlive = true;
+    public float DeathCounter = 0;
     void Start() {
         sprite = GetComponent<SpriteRenderer>();
     }
@@ -20,6 +21,7 @@ public class PlayersManager : MonoBehaviour {
                 playersHealthPoints--;
                 if(playersHealthPoints <= 0) {
                     isAlive = false;
+                    DeathCounter++;
                 }
                 healthTimer = 0.01f;
             }
