@@ -16,7 +16,7 @@ public class BulletSpawner : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 GameObject bulletPrefab = Instantiate(BulletPrefab, transform.position, transform.rotation);
-                Destroy(BulletPrefab, .6f);
+                //Destroy(BulletPrefab, .6f);
                 shoot = false;
                 
 

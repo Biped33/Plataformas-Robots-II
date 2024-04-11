@@ -132,7 +132,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 5370055060261672190, guid: 736c012e8698e46488a98c22209d5c51, type: 3}
-  Cloud: {fileID: 1859840353557271059}
   speed: 158.61
   distance: 82.71
   EnemyCloudHealth: 2

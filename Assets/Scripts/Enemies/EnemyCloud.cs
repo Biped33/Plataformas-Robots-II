@@ -5,14 +5,15 @@ using UnityEngine;
 public class EnemyCloud : MonoBehaviour
 {
     public GameObject Player;
-    public GameObject Cloud;
     public float speed;
     public float distance;
     public int EnemyCloudHealth = 2;
+
+     private PointsManager pointsManagerScr;
     // Start is called before the first frame update
     void Start()
     {
-        EnemyCloudHealth = 2;  
+        pointsManagerScr = FindObjectOfType<PointsManager>();
     }
 
        
@@ -37,6 +38,7 @@ public class EnemyCloud : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Lazer"))
             {
+                
                 EnemyCloudHealth--;
                 Destroy(collision.gameObject);
             }
@@ -48,8 +50,8 @@ public class EnemyCloud : MonoBehaviour
         }
         if(EnemyCloudHealth <= 0)
         {
-            Destroy(Cloud);
-            //Add points
+            pointsManagerScr.addPoints(5);
+            Destroy(this.gameObject);
         }
     }
 }
