@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 public class PlayersManager : MonoBehaviour {
     [SerializeField]
@@ -31,7 +32,12 @@ public class PlayersManager : MonoBehaviour {
     if (collision.gameObject.tag == "Finish line"){
             Debug.Log("You´re Win");
         }
+        if (collision.gameObject.tag == "EnemyCloud" || collision.gameObject.tag == "EnemyTentacle")
+        {
+            playersHealthPoints--;
+        }
     }
+    
     public void restartPlayer() {
         gameObject.transform.position = respawnPoint.position;
         playersHealthPoints = 5;
