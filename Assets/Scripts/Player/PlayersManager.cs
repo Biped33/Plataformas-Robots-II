@@ -10,8 +10,13 @@ public class PlayersManager : MonoBehaviour {
     private SpriteRenderer sprite;
     public bool isAlive = true;
     public float DeathCounter = 0;
-    void Start() {
+    void Start()
+    {
         sprite = GetComponent<SpriteRenderer>();
+    }
+    private void Update()
+    {
+        noLivesBehabiour();
     }
     private void OnCollisionStay2D(Collision2D collision) {
         if(collision.gameObject.layer == deadZones) {
@@ -23,6 +28,7 @@ public class PlayersManager : MonoBehaviour {
                 if(playersHealthPoints <= 0) {
                     isAlive = false;
                     DeathCounter++;
+                    Debug.Log("death counter " + DeathCounter + "/5");
                 }
                 healthTimer = 0.01f;
             }
@@ -35,6 +41,7 @@ public class PlayersManager : MonoBehaviour {
         if (collision.gameObject.tag == "EnemyCloud" || collision.gameObject.tag == "EnemyTentacle")
         {
             playersHealthPoints--;
+            Debug.Log("HP :" + playersHealthPoints);
         }
     }
     
@@ -42,5 +49,14 @@ public class PlayersManager : MonoBehaviour {
         gameObject.transform.position = respawnPoint.position;
         playersHealthPoints = 5;
         isAlive = true;
+    }
+
+    void noLivesBehabiour()
+    {
+        if (DeathCounter >= 5)
+        {
+            Debug.Log("You´re Dead");
+            this.gameObject.SetActive(false);
+        }
     }
 }

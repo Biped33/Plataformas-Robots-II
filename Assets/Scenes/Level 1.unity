@@ -617,7 +617,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 67743808}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +758,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121350243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.6816025, y: -4.9392705, z: -10}
+  m_LocalPosition: {x: -12.192059, y: -4.939364, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -847,6 +847,10 @@ PrefabInstance:
     - target: {fileID: 1859840353557271059, guid: 16ed28ef033b4db489906d8bfc966f79, type: 3}
       propertyPath: m_Name
       value: Enemy_Cloud (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859840353557271059, guid: 16ed28ef033b4db489906d8bfc966f79, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1859840353557271279, guid: 16ed28ef033b4db489906d8bfc966f79, type: 3}
       propertyPath: m_RootOrder
@@ -998,6 +1002,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Cloud (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1859840353557271059, guid: 16ed28ef033b4db489906d8bfc966f79, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1859840353557271279, guid: 16ed28ef033b4db489906d8bfc966f79, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1054,6 +1062,10 @@ PrefabInstance:
     - target: {fileID: 1859840353557271059, guid: 16ed28ef033b4db489906d8bfc966f79, type: 3}
       propertyPath: m_Name
       value: Enemy_Cloud (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859840353557271059, guid: 16ed28ef033b4db489906d8bfc966f79, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1859840353557271279, guid: 16ed28ef033b4db489906d8bfc966f79, type: 3}
       propertyPath: m_RootOrder
@@ -9535,7 +9547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596593205}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.040001, y: -5.93, z: 0}
+  m_LocalPosition: {x: -18.25, y: -5.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76344,6 +76356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Tentacle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8439181967006817524, guid: 55a99b1e5c708a5459762f6a6f3749e4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55a99b1e5c708a5459762f6a6f3749e4, type: 3}
 --- !u!1 &1042137121
@@ -76785,6 +76801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Tentacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8439181967006817524, guid: 55a99b1e5c708a5459762f6a6f3749e4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55a99b1e5c708a5459762f6a6f3749e4, type: 3}
 --- !u!1001 &1396148805
@@ -76845,6 +76865,10 @@ PrefabInstance:
     - target: {fileID: 8439181967006817524, guid: 55a99b1e5c708a5459762f6a6f3749e4, type: 3}
       propertyPath: m_Name
       value: Enemy_Tentacle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439181967006817524, guid: 55a99b1e5c708a5459762f6a6f3749e4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55a99b1e5c708a5459762f6a6f3749e4, type: 3}
@@ -76908,6 +76932,10 @@ PrefabInstance:
     - target: {fileID: 1859840353557271059, guid: 16ed28ef033b4db489906d8bfc966f79, type: 3}
       propertyPath: m_Name
       value: Enemy_Cloud
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859840353557271059, guid: 16ed28ef033b4db489906d8bfc966f79, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1859840353557271279, guid: 16ed28ef033b4db489906d8bfc966f79, type: 3}
       propertyPath: m_RootOrder
@@ -80391,6 +80419,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2027904318}
     m_Modifications:
+    - target: {fileID: 5370055060261672161, guid: 736c012e8698e46488a98c22209d5c51, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2027904317}
     - target: {fileID: 5370055060261672161, guid: 736c012e8698e46488a98c22209d5c51, type: 3}
       propertyPath: respawnPoint
       value: 
