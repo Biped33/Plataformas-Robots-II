@@ -10,6 +10,8 @@ public class PlayersManager : MonoBehaviour {
     private SpriteRenderer sprite;
     public bool isAlive = true;
     public float DeathCounter = 0;
+    public GameObject LoseMenu;
+    public GameObject WinMenu;
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -35,8 +37,11 @@ public class PlayersManager : MonoBehaviour {
         }
     }
     private void OnTriggerEnter2D(Collider2D collision) {
-    if (collision.gameObject.tag == "Finish line"){
+    if (collision.gameObject.tag == "Finish line")
+        {
             Debug.Log("You´re Win");
+            Time.timeScale = 0;
+            WinMenu.SetActive(true);
         }
         if (collision.gameObject.tag == "EnemyCloud" || collision.gameObject.tag == "EnemyTentacle")
         {
@@ -55,7 +60,9 @@ public class PlayersManager : MonoBehaviour {
     {
         if (DeathCounter >= 5)
         {
+
             Debug.Log("You´re Dead");
+            LoseMenu.SetActive(true);
             this.gameObject.SetActive(false);
         }
     }
