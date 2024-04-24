@@ -9,6 +9,7 @@ TagManager:
   - EnemyCloud
   - EnemyTentacle
   - Lazer
+  - 1-UP
   layers:
   - Default
   - TransparentFX

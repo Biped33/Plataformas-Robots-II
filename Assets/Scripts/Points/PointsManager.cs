@@ -1,21 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PointsManager : MonoBehaviour
 {
-    
-    public int points;
+    public static PointsManager Instance;
 
-    void Start()
+    public int points=0;
+    public TextMeshProUGUI PointsText;
+
+
+    private void Awake()
     {
-        
+        if(Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
     }
 
-    
     void Update()
     {
-        
+        PointsText.text = points.ToString("N0");
+
     }
 
     public void addPoints(int PointsToAdd)
@@ -24,3 +35,4 @@ public class PointsManager : MonoBehaviour
         Debug.Log("Puntos: " + points);
     }
 }
+

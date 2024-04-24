@@ -12,9 +12,14 @@ public class PlayersManager : MonoBehaviour {
     public float DeathCounter = 0;
     public GameObject LoseMenu;
     public GameObject WinMenu;
+
+    private Lives LivesCounter;
+
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        LivesCounter = FindObjectOfType<Lives>();
+
     }
     private void Update()
     {
@@ -31,6 +36,8 @@ public class PlayersManager : MonoBehaviour {
                     isAlive = false;
                     DeathCounter++;
                     Debug.Log("death counter " + DeathCounter + "/5");
+                    LivesCounter.RestLives();
+
                 }
                 healthTimer = 0.01f;
             }
@@ -58,7 +65,7 @@ public class PlayersManager : MonoBehaviour {
 
     void noLivesBehabiour()
     {
-        if (DeathCounter >= 5)
+        if (DeathCounter >= 3)
         {
 
             Debug.Log("You´re Dead");
