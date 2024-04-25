@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour
             if (timer > 0)
             {
                 timer -= Time.deltaTime;
-                Debug.Log(timer);
+                
                 if(timer < 10)
                 {
                     timerText.color = Color.red;

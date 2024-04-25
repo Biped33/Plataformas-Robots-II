@@ -12,6 +12,7 @@ public class ExtraLiveUpScript : MonoBehaviour
     void Start()
     {
         LivesCounter = FindObjectOfType<Lives>();
+        pointsManagerScr = FindObjectOfType<PointsManager>();
 
     }
 
