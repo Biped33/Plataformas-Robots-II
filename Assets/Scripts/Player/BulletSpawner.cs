@@ -13,16 +13,14 @@ public class BulletSpawner : MonoBehaviour
     {
         if (shoot == true)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0)) 
             {
                 GameObject bulletPrefab = Instantiate(BulletPrefab, transform.position, transform.rotation);
                 //Destroy(BulletPrefab, .6f);
                 shoot = false;
-                
-
             }
         }
-        if(Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0)) 
         {
             shoot = true;
         }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8439181967006817527}
   - component: {fileID: 3257976664451617188}
   - component: {fileID: 8196476964975071845}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy_Tentacle
   m_TagString: EnemyTentacle
   m_Icon: {fileID: 0}
@@ -157,5 +157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051efe2bf61942540a4ba2d405230dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tentacle: {fileID: 8439181967006817524}
-  EnemyCloudHealth: 1
+  enemyTentacle: {fileID: 0}
+  EnemyTentacleHealth: 1
+  moveSpeed: 1

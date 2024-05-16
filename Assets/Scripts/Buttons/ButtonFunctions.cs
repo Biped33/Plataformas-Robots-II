@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFunctions : MonoBehaviour
 {
-    // sale del juego
+   
     public void QuitGame()
     {
         Debug.Log("You have quited the game (it doesnt show cus you are playing in editor)");
@@ -11,21 +11,37 @@ public class ButtonFunctions : MonoBehaviour
     }
 
     // cambiar de escena
-    public void changeToScene(string sceneName)
+    public void ChangeToScene(string sceneName)
     {
+        if (sceneName == "Level 1")
+        {
+            CreditsManager creditsManager = FindObjectOfType<CreditsManager>();
 
+            if (creditsManager != null && creditsManager.creditsCount >= 1)
+            {
+                creditsManager.RemoveCredits(1);
+                SceneManager.LoadScene(sceneName);
+                Time.timeScale = 1;
+            }
+        }
+        else if (sceneName != "Level 1")
+        {
         SceneManager.LoadScene(sceneName);
         Time.timeScale = 1;
+
+        }
     }
 
     public void ReloadScene()
     {
+
+      
+        CreditsManager creditsManager = FindObjectOfType<CreditsManager>();
+        if (creditsManager != null && creditsManager.creditsCount >= 1)
+        {
+            creditsManager.RemoveCredits(1);
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
-
-
-
-
 }
-

@@ -7,28 +7,33 @@ public class EnemyTentacle : MonoBehaviour
     public GameObject enemyTentacle;
     private PointsManager pointsManagerScr;
     public int EnemyTentacleHealth = 1;
+    public float moveSpeed = 1f;
+    private Transform player;
 
 
     void Start()
     {
-        // Obtener referencia al componente PointsManager
+        
         pointsManagerScr = FindObjectOfType<PointsManager>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void Update()
     {
-        // Verificar si el objeto "Enemy Cloud" ha sido destruido
-        //if (enemyCloud == null)
-        //{
-            // Agregar puntos usando el componente PointsManager
-           // if (pointsManagerScr != null)
-          //  {
-          //      pointsManagerScr.addPoints(3);
-            // Destruir este GameObject
-          //  Destroy(this.gameObject);
-          //  }
+        if (player != null)
+        {
 
-        //}
+            Vector3 direction = (player.transform.position - transform.position);
+
+
+            if (direction != Vector3.zero)
+            {
+                direction.Normalize();
+            }
+
+
+            transform.position += direction * moveSpeed * Time.deltaTime;
+        }
     }
 
 
@@ -44,11 +49,7 @@ public class EnemyTentacle : MonoBehaviour
                 EnemyTentacleHealth--;
                 Destroy(collision.gameObject);
             }
-            if (collision.gameObject.CompareTag("Player"))
-            {
-
-                EnemyTentacleHealth--;
-            }
+            
         }
         if (EnemyTentacleHealth <= 0)
         {

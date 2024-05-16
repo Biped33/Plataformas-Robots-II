@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1859840353557271056}
   - component: {fileID: 1859840353557271276}
   - component: {fileID: -6260889390475600834}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Enemy_Cloud
   m_TagString: EnemyCloud
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 5370055060261672190, guid: 736c012e8698e46488a98c22209d5c51, type: 3}
-  speed: 158.61
+  moveSpeed: 1
   distance: 82.71
   EnemyCloudHealth: 2
 --- !u!61 &-6260889390475600834

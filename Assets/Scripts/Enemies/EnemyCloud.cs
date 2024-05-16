@@ -5,32 +5,38 @@ using UnityEngine;
 public class EnemyCloud : MonoBehaviour
 {
     public GameObject Player;
-    public float speed;
+    public float moveSpeed = 1f;
+    private Transform player;
     public float distance;
     public int EnemyCloudHealth = 2;
 
-     private PointsManager pointsManagerScr;
+    private PointsManager pointsManagerScr;
     // Start is called before the first frame update
     void Start()
     {
         pointsManagerScr = FindObjectOfType<PointsManager>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-       
-    
-      void Update()
+
+
+    void Update()
     {
-        
-        distance=Vector2.Distance(transform.position, Player.transform.position);
-        Vector2 directions = Player.transform.position - transform.position;
-       
-
-        if (distance < 5)
+         if (player != null)
         {
-            transform.position=Vector2.MoveTowards(this.transform.position, Player.transform.position, speed*Time.deltaTime);
-            transform.rotation = Quaternion.Euler(Vector3.forward);
+            
+            Vector3 direction = (player.transform.position - transform.position);
 
+            
+            if (direction != Vector3.zero)
+            {
+                direction.Normalize();
+            }
+
+           
+            transform.position += direction * moveSpeed * Time.deltaTime;
         }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -38,17 +44,13 @@ public class EnemyCloud : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Lazer"))
             {
-                
+
                 EnemyCloudHealth--;
                 Destroy(collision.gameObject);
             }
-            if (collision.gameObject.CompareTag("Player"))
-            {
-
-                EnemyCloudHealth--;
-            }
+            
         }
-        if(EnemyCloudHealth <= 0)
+        if (EnemyCloudHealth <= 0)
         {
             pointsManagerScr.addPoints(5);
             Destroy(this.gameObject);

@@ -43,12 +43,16 @@ public class PlayersManager : MonoBehaviour {
             }
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision) {
-    if (collision.gameObject.tag == "Finish line")
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Finish line")
         {
             Debug.Log("You´re Win");
             Time.timeScale = 0;
             WinMenu.SetActive(true);
+
+            // Acceder al ScoreManager
+          
         }
         if (collision.gameObject.tag == "EnemyCloud" || collision.gameObject.tag == "EnemyTentacle")
         {
@@ -56,7 +60,7 @@ public class PlayersManager : MonoBehaviour {
             Debug.Log("HP :" + playersHealthPoints);
         }
     }
-    
+
     public void restartPlayer() {
         gameObject.transform.position = respawnPoint.position;
         playersHealthPoints = 5;
@@ -68,9 +72,14 @@ public class PlayersManager : MonoBehaviour {
         if (DeathCounter >= 3)
         {
 
-            Debug.Log("You´re Dead");
-            LoseMenu.SetActive(true);
-            this.gameObject.SetActive(false);
+            killPlayer();
         }
+    }
+
+    public void killPlayer()
+    {
+        Debug.Log("You´re Dead");
+        LoseMenu.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }

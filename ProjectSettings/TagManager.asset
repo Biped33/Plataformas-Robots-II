@@ -10,6 +10,8 @@ TagManager:
   - EnemyTentacle
   - Lazer
   - 1-UP
+  - Floor
+  - Door
   layers:
   - Default
   - TransparentFX

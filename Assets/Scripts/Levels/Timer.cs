@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class Timer : MonoBehaviour
 {
@@ -11,25 +9,24 @@ public class Timer : MonoBehaviour
     public float timer = 100;
     public bool GameOver = false;
     public bool timeIsRunning = true;
-    float tiempotranscurrido;
     private Lives LivesCounter;
+    public PlayersManager playersManagerscr;
 
     private void Start()
     {
         LivesCounter = FindObjectOfType<Lives>();
-
+        playersManagerscr = FindObjectOfType<PlayersManager>();
     }
-
 
     void FixedUpdate()
     {
-        if ( timeIsRunning == true)
+        if (timeIsRunning)
         {
             if (timer > 0)
             {
                 timer -= Time.deltaTime;
-                
-                if(timer < 10)
+
+                if (timer < 10)
                 {
                     timerText.color = Color.red;
                 }
@@ -38,27 +35,27 @@ public class Timer : MonoBehaviour
                     timerText.color = Color.white;
                 }
             }
-        }
-        else
-        {
-            GameOver = true;
-            timer = 0;
-            timeIsRunning = false;
-            LivesCounter.RestLives();
-
+            else
+            {
+                GameOver = true;
+                timer = 0;
+                timeIsRunning = false;
+                LivesCounter.RestLives();
+            }
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //timerText.text = timer.ToString();
-        //    timerText.text = string.Format("{0}");
-        //timer.ToString("N0");
-        timerText.text = timer.ToString("N0");
+        int minutes = Mathf.FloorToInt(timer / 60);
+        int seconds = Mathf.FloorToInt(timer % 60);
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+
+        if (timer < 0)
+        {
+            playersManagerscr.killPlayer();
+        }
+
     }
-    
-    
-        
-    
 }

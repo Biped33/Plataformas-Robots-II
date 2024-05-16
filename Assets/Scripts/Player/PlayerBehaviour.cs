@@ -1,10 +1,13 @@
 using UnityEngine;
 public class PlayerBehaviour : MonoBehaviour{
-    private int t_movSpeed = 300, t_jumpCount = 2, t_layerint = 3; 
+    private int t_movSpeed = 300, t_jumpCount = 2;
+        //private int t_layerint = 3; 
     private float t_inputHorizontal, t_jumpForce = 8f, t_maxJumpForce = 10f;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator animator;
+    [System.NonSerialized]
+    public bool hasKey;
     void Start(){
         getComponents();
     }
@@ -15,9 +18,7 @@ public class PlayerBehaviour : MonoBehaviour{
     private void FixedUpdate(){
         playerMovement();
     }
-    private void OnCollisionEnter2D(Collision2D collision){
-        playerCollisions(collision);
-    }
+    
     void getComponents(){
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
@@ -37,6 +38,46 @@ public class PlayerBehaviour : MonoBehaviour{
             rb.velocity = rb.velocity.normalized * t_maxJumpForce;
         }
     }
+
+    bool hasjumpbeenreseted = false;
+    void OnCollisionStay2D(Collision2D collision)
+    {
+
+        // resetear salto
+        if (collision.collider.CompareTag("Floor"))
+        {
+
+
+            // esto es para que el salto solo se resetee cuando toca el suelo, y no una pared, techo etc...
+            // Aquí se utiliza un condicional para verificar el ángulo entre la normal de la colisión y el vector hacia arriba (Vector2.up).
+            // La normal es un vector perpendicular a la superficie de colisión. 
+            // Este condicional verifica si el ángulo entre la normal y el vector hacia arriba es menor a 45 grados.
+            // conseguido de stack overflow de usuario "Voidsay"
+
+            // revisar todos los puntos de contacto
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                if (Vector2.Angle(contact.normal, Vector2.up) < 45 && !hasjumpbeenreseted)
+                {
+                    t_jumpCount = 2;
+                    animator.SetBool("Jumping", false);
+                    hasjumpbeenreseted = true;
+                }
+            }
+        }
+
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+
+        if (collision.collider.CompareTag("Floor"))
+        {
+            hasjumpbeenreseted = false;
+        }
+    }
     void playerDirection(){
         if (t_inputHorizontal < 0){
             sprite.flipX = true;
@@ -50,10 +91,5 @@ public class PlayerBehaviour : MonoBehaviour{
             animator.SetBool("Walking", false);
         }
     }
-    void playerCollisions(Collision2D collision){
-        if (collision.gameObject.layer == t_layerint){
-            t_jumpCount = 2;
-            animator.SetBool("Jumping", false);
-        }
-    }
+   
 }
